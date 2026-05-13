@@ -620,11 +620,11 @@ body.light-mode .info-card p {
   position: relative;
   display: grid;
   gap: 8px;
-  padding-left: 36px;
+  padding-left: 72px;
   margin-bottom: 24px;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 24px;
-  padding: 18px 18px 18px 28px;
+  padding: 22px 22px 22px 24px;
 }
 
 .detail-card-inner .timeline-item:last-child {
@@ -647,18 +647,20 @@ body.light-mode .info-card p {
 
 .detail-card-inner .timeline-icon {
   position: absolute;
-  left: -26px;
-  top: 10px;
-  width: 32px;
-  height: 32px;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
   background: rgba(200, 179, 246, 0.95);
   color: #0D0E20;
-  font-size: 0.9rem;
-  box-shadow: 0 12px 28px rgba(200, 179, 246, 0.24);
+  font-size: 1rem;
+  box-shadow: 0 18px 32px rgba(200, 179, 246, 0.24);
 }
 
 @keyframes floating {
