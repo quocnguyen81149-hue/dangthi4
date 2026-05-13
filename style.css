@@ -620,7 +620,7 @@ body.light-mode .info-card p {
   position: relative;
   display: grid;
   gap: 8px;
-  padding-left: 72px;
+  padding-left: 98px;
   margin-bottom: 24px;
   background: rgba(255, 255, 255, 0.04);
   border-radius: 24px;
@@ -647,7 +647,7 @@ body.light-mode .info-card p {
 
 .detail-card-inner .timeline-icon {
   position: absolute;
-  left: 16px;
+  left: 18px;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
