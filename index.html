@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dang Hoang Anh Thi Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="background-blur"></div>
+
+  <header>
+    <h2 class="logo">AT.</h2>
+
+    <button id="theme-toggle">
+      ☾
+    </button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-left">
+
+        <p class="small-title">PORTFOLIO</p>
+
+        <h1>
+          Đặng Hoàng <br>
+          Anh Thi
+        </h1>
+
+        <h3>Đồ họa kỹ thuật số</h3>
+
+        <p class="description">
+          Mình yêu thích thiết kế sáng tạo, minh họa kỹ thuật số 
+          và những trải nghiệm giao diện mang cảm giác mềm mại,
+          hiện đại và nghệ thuật.
+        </p>
+
+        <div class="buttons">
+          <button class="primary-btn">Xem dự án</button>
+          <button class="secondary-btn">Liên hệ</button>
+        </div>
+
+      </div>
+
+      <div class="hero-right">
+
+        <div class="profile-card">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop" alt="">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="about">
+
+      <div class="card">
+        <h2>Giới thiệu</h2>
+
+        <p>
+          Xin chào! Mình là Anh Thi — sinh viên ngành 
+          Đồ họa kỹ thuật số với niềm yêu thích đặc biệt dành cho 
+          UI/UX, illustration và thiết kế mang màu sắc nghệ thuật.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Sở thích</h2>
+
+        <ul>
+          <li>🎨 Vẽ tranh</li>
+          <li>🎧 Nghe nhạc</li>
+          <li>🧁 Làm bánh</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="projects">
+
+      <h2 class="section-title">Dự án nổi bật</h2>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <h3>UI Mobile App</h3>
+          <p>
+            Thiết kế ứng dụng học tập với phong cách pastel tối giản.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Branding Design</h3>
+          <p>
+            Bộ nhận diện thương hiệu với cảm hứng nghệ thuật số.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Digital Illustration</h3>
+          <p>
+            Bộ tranh minh họa mang phong cách dreamy fantasy.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+
+      if(document.body.classList.contains("light-mode")){
+        toggleBtn.innerHTML = "☀";
+      }else{
+        toggleBtn.innerHTML = "☾";
+      }
+    });
+  </script>
+
+</body>
+</html>
