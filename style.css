@@ -5,23 +5,23 @@
 }
 
 :root {
-  --bg: #170a28;
-  --bg-alt: #24063d;
+  --bg: #0D0E20;
+  --bg-alt: #2D1C7F;
   --surface: rgba(255, 255, 255, 0.12);
   --surface-strong: rgba(255, 255, 255, 0.18);
-  --text: #f8f4ff;
-  --text-muted: rgba(248, 244, 255, 0.75);
-  --pink: #e8a0ff;
-  --purple: #a25cff;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.77);
+  --pink: #C8B3F6;
+  --purple: #B0A9E5;
   --blue: #8be8ff;
-  --shadow: rgba(132, 85, 255, 0.24);
+  --shadow: rgba(200, 179, 246, 0.24);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top left, rgba(190, 140, 255, 0.18), transparent 24%),
-    radial-gradient(circle at 90% 12%, rgba(92, 167, 255, 0.16), transparent 18%),
-    linear-gradient(180deg, #21043f 0%, #150528 45%, #0f0620 100%);
+  background: radial-gradient(circle at top left, rgba(200, 179, 246, 0.24), transparent 22%),
+    radial-gradient(circle at 88% 14%, rgba(176, 169, 229, 0.18), transparent 18%),
+    linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 55%, #0D0E20 100%);
   color: var(--text);
   min-height: 100vh;
   overflow-x: hidden;
@@ -31,12 +31,12 @@ body {
 body.light-mode {
   --bg: #f8f6ff;
   --bg-alt: #ede9ff;
-  --surface: rgba(255, 255, 255, 0.72);
+  --surface: rgba(255, 255, 255, 0.78);
   --surface-strong: rgba(255, 255, 255, 0.22);
-  --text: #1d1536;
-  --text-muted: rgba(29, 21, 54, 0.75);
-  --pink: #d095ff;
-  --purple: #7a62ff;
+  --text: #0D0E20;
+  --text-muted: rgba(13, 14, 32, 0.75);
+  --pink: #C8B3F6;
+  --purple: #B0A9E5;
   --blue: #6bb9ff;
 }
 
@@ -48,7 +48,7 @@ body.light-mode .topbar,
 body.light-mode .glass-card,
 body.light-mode .info-card,
 body.light-mode .contact-item {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.82);
 }
 
 body.light-mode .brand-text,
@@ -219,6 +219,11 @@ body.light-mode .info-card p {
 .hero-title:not(.shadow-title) {
   color: var(--text);
   text-shadow: 0 16px 48px rgba(129, 97, 255, 0.22);
+}
+
+.shadow-title.tertiary {
+  transform: translate(30px, 26px);
+  opacity: 0.3;
 }
 
 .hero-subtitle {
