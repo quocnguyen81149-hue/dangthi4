@@ -262,4 +262,30 @@
     </div>
   </section>
 </body>
+
+<script>
+  // Theme toggle functionality
+  const themeToggle = document.getElementById('theme-toggle');
+  const htmlElement = document.documentElement;
+  const body = document.body;
+
+  // Check for saved theme preference or default to dark mode
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+    themeToggle.textContent = '☀️';
+  } else {
+    body.classList.remove('light-mode');
+    themeToggle.textContent = '☾';
+  }
+
+  // Theme toggle event listener
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    const isLightMode = body.classList.contains('light-mode');
+    localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
+    themeToggle.textContent = isLightMode ? '☀️' : '☾';
+  });
+</script>
+
 </html>

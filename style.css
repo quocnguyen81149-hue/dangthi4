@@ -31,37 +31,240 @@ body {
 body.light-mode {
   --bg: #f8f6ff;
   --bg-alt: #ede9ff;
-  --surface: rgba(255, 255, 255, 0.78);
-  --surface-strong: rgba(255, 255, 255, 0.22);
+  --surface: rgba(13, 14, 32, 0.08);
+  --surface-strong: rgba(13, 14, 32, 0.15);
   --text: #0D0E20;
-  --text-muted: rgba(13, 14, 32, 0.75);
+  --text-muted: rgba(13, 14, 32, 0.7);
   --pink: #C8B3F6;
   --purple: #B0A9E5;
-  --blue: #6bb9ff;
+  --blue: #6c63ff;
+  --shadow: rgba(108, 99, 255, 0.1);
+  background: linear-gradient(135deg, #f8f6ff 0%, #ede9ff 50%, #f5f2ff 100%) !important;
 }
 
 body.light-mode .background-layer {
-  opacity: 0.55;
+  opacity: 0.25;
+  background: radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.08), transparent 16%),
+    radial-gradient(circle at 85% 10%, rgba(108, 99, 255, 0.06), transparent 14%),
+    radial-gradient(circle at 50% 90%, rgba(167, 139, 250, 0.05), transparent 18%) !important;
 }
 
-body.light-mode .topbar,
-body.light-mode .glass-card,
-body.light-mode .info-card,
-body.light-mode .contact-item {
-  background: rgba(255, 255, 255, 0.82);
+/* Light mode - Topbar & Navigation */
+body.light-mode .topbar {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border-color: rgba(139, 92, 246, 0.15) !important;
 }
 
 body.light-mode .brand-text,
-body.light-mode .nav-menu a,
-body.light-mode .hero-title,
-body.light-mode .hero-subtitle,
-body.light-mode .eyebrow,
+body.light-mode .nav-menu a {
+  color: #2a1a5e !important;
+}
+
+body.light-mode .nav-menu a:hover {
+  color: #8b5cf6 !important;
+}
+
+body.light-mode .theme-toggle {
+  color: #2a1a5e !important;
+  background: rgba(200, 179, 246, 0.2) !important;
+}
+
+/* Light mode - Hero section */
+body.light-mode .hero-title {
+  color: #2a1a5e !important;
+}
+
+body.light-mode .shadow-title {
+  color: rgba(139, 92, 246, 0.15) !important;
+}
+
+body.light-mode .glass-card {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(139, 92, 246, 0.2) !important;
+}
+
+body.light-mode .contact-item {
+  background: rgba(200, 179, 246, 0.1) !important;
+}
+
 body.light-mode .contact-item span,
-body.light-mode .contact-item strong,
+body.light-mode .contact-item strong {
+  color: #2a1a5e !important;
+}
+
+/* Light mode - About section */
+body.light-mode .about-page {
+  background: radial-gradient(circle at center, rgba(139, 92, 246, 0.08), rgba(167, 139, 250, 0.04)),
+    linear-gradient(135deg, rgba(200, 179, 246, 0.05), rgba(139, 92, 246, 0.02)) !important;
+}
+
+body.light-mode .about-copy,
+body.light-mode .about-avatar-card {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(139, 92, 246, 0.2) !important;
+}
+
+body.light-mode .about-eyebrow {
+  color: #8b5cf6 !important;
+}
+
+body.light-mode .about-copy h2 {
+  color: #2a1a5e !important;
+}
+
+body.light-mode .about-copy p {
+  color: rgba(13, 14, 32, 0.8) !important;
+}
+
+body.light-mode .contact-card {
+  background: rgba(200, 179, 246, 0.1) !important;
+}
+
+body.light-mode .contact-card h3,
+body.light-mode .contact-row {
+  color: #2a1a5e !important;
+}
+
+body.light-mode .about-footer {
+  background: transparent !important;
+}
+
+body.light-mode .about-timeline {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(139, 92, 246, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.08) !important;
+}
+
+body.light-mode .timeline-header {
+  color: #8b5cf6 !important;
+}
+
+body.light-mode .timeline-track {
+  background: linear-gradient(180deg, rgba(200, 179, 246, 0.6), rgba(176, 169, 229, 0.2)) !important;
+}
+
+body.light-mode .timeline-item {
+  background: rgba(200, 179, 246, 0.08) !important;
+}
+
+body.light-mode .timeline-icon {
+  background: rgba(200, 179, 246, 0.5) !important;
+  color: #ffffff !important;
+}
+
+body.light-mode .timeline-item strong {
+  color: #2a1a5e !important;
+}
+
+body.light-mode .timeline-item p {
+  color: rgba(13, 14, 32, 0.7) !important;
+}
+
+body.light-mode .about-detail-card {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(139, 92, 246, 0.15) !important;
+}
+
+body.light-mode .detail-card-inner h3 {
+  color: #8b5cf6 !important;
+}
+
+/* Light mode - Skill section */
+body.light-mode .skill-page {
+  background: radial-gradient(circle at center, rgba(139, 92, 246, 0.1), rgba(167, 139, 250, 0.05)),
+    linear-gradient(135deg, rgba(200, 179, 246, 0.08), rgba(139, 92, 246, 0.04)) !important;
+}
+
+body.light-mode .skill-title {
+  color: #2a1a5e !important;
+  text-shadow: 0 0 15px rgba(139, 92, 246, 0.15) !important;
+}
+
+body.light-mode .skill-subtitle {
+  color: rgba(42, 26, 94, 0.7) !important;
+}
+
+body.light-mode .skills-list {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(139, 92, 246, 0.2) !important;
+  box-shadow: 0 15px 50px rgba(139, 92, 246, 0.12) !important;
+}
+
+body.light-mode .skill-name {
+  color: #2a1a5e !important;
+}
+
+body.light-mode .skill-value {
+  color: #8b5cf6 !important;
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.2) !important;
+}
+
+body.light-mode .skill-bar-container {
+  background: rgba(200, 179, 246, 0.15) !important;
+  border-color: rgba(139, 92, 246, 0.2) !important;
+}
+
+body.light-mode .skill-bar {
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.7), rgba(167, 139, 250, 0.85)) !important;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.25) !important;
+}
+
+body.light-mode .chart-grid {
+  background-image: 
+    linear-gradient(90deg, rgba(139, 92, 246, 0.06) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(139, 92, 246, 0.06) 1px, transparent 1px) !important;
+}
+
+/* Light mode - Experience section */
+body.light-mode .experience-page {
+  background: radial-gradient(circle at center, rgba(139, 92, 246, 0.1), rgba(167, 139, 250, 0.05)),
+    linear-gradient(135deg, rgba(200, 179, 246, 0.08), rgba(139, 92, 246, 0.04)) !important;
+}
+
+body.light-mode .experience-title {
+  color: #2a1a5e !important;
+  text-shadow: 0 0 15px rgba(139, 92, 246, 0.15) !important;
+}
+
+body.light-mode .experience-item {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(139, 92, 246, 0.2) !important;
+  box-shadow: 0 10px 35px rgba(139, 92, 246, 0.12) !important;
+}
+
+body.light-mode .experience-item h3 {
+  color: #2a1a5e !important;
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.15) !important;
+}
+
+body.light-mode .experience-date {
+  color: #8b5cf6 !important;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.2) !important;
+}
+
+body.light-mode .experience-desc {
+  color: rgba(13, 14, 32, 0.8) !important;
+}
+
+body.light-mode .experience-item:hover {
+  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.18) !important;
+}
+
+/* Light mode - Info cards & general */
+body.light-mode .info-card {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(139, 92, 246, 0.15) !important;
+}
+
 body.light-mode .info-card h2,
 body.light-mode .info-card p {
-  color: var(--text);
+  color: #2a1a5e !important;
 }
+
+body.light-mode .info-card h2 {
+  color: #8b5cf6 !important;
+}
+
 
 .page-shell {
   position: relative;
@@ -832,10 +1035,10 @@ body.light-mode .info-card p {
 }
 
 .skill-page {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #f8f6ff 0%, #ede9ff 50%, #f5f2ff 100%);
+  padding: 60px 0 100px;
+  background: radial-gradient(circle at center, rgba(108, 99, 255, 0.15), rgba(139, 92, 246, 0.1), rgba(167, 139, 250, 0.08)),
+    linear-gradient(135deg, rgba(108, 99, 255, 0.05), rgba(139, 92, 246, 0.03), rgba(167, 139, 250, 0.02));
   position: relative;
-  overflow: hidden;
 }
 
 .skill-page::before {
@@ -844,24 +1047,14 @@ body.light-mode .info-card p {
   top: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  background: linear-gradient(180deg, rgba(139, 92, 246, 0.15), transparent);
-  pointer-events: none;
-}
-
-.skill-page::after {
-  content: '';
-  position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 200px;
-  background: linear-gradient(180deg, transparent, rgba(139, 92, 246, 0.12));
+  background: radial-gradient(circle at 30% 70%, rgba(108, 99, 255, 0.1), transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.08), transparent 50%);
   pointer-events: none;
 }
 
 .skill-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   position: relative;
@@ -876,16 +1069,19 @@ body.light-mode .info-card p {
 
 .skill-title {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #2a1a5e;
+  color: #ffffff;
+  text-align: center;
   margin-bottom: 12px;
+  font-weight: 700;
   font-family: 'Playfair Display', serif;
+  text-shadow: 0 0 20px rgba(108, 99, 255, 0.5);
   letter-spacing: 0.02em;
+  animation: glowPulse 3s ease-in-out infinite;
 }
 
 .skill-subtitle {
   font-size: 1.1rem;
-  color: rgba(42, 26, 94, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
 }
@@ -898,12 +1094,12 @@ body.light-mode .info-card p {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(90deg, rgba(139, 92, 246, 0.05) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(139, 92, 246, 0.05) 1px, transparent 1px);
-  background-size: 100% 40px, calc(100% / 5) 100%;
+    linear-gradient(90deg, rgba(200, 179, 246, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(200, 179, 246, 0.08) 1px, transparent 1px);
+  background-size: 100% 50px, calc(100% / 5) 100%;
   background-position: 0 0, 0 0;
   pointer-events: none;
-  border-radius: 16px;
+  border-radius: 20px;
 }
 
 .skills-list {
@@ -911,13 +1107,13 @@ body.light-mode .info-card p {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 40px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 16px;
-  border: 1px solid rgba(139, 92, 246, 0.15);
-  box-shadow: 0 10px 40px rgba(139, 92, 246, 0.1),
-    0 0 60px rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
+  padding: 48px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(108, 99, 255, 0.15),
+    0 0 40px rgba(200, 179, 246, 0.1);
 }
 
 .skill-item {
@@ -935,85 +1131,105 @@ body.light-mode .info-card p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .skill-name {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  color: #2a1a5e;
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
 }
 
 .skill-value {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #8b5cf6;
+  color: #a78bfa;
   font-family: 'Poppins', sans-serif;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.4);
 }
 
 .skill-bar-container {
   position: relative;
-  height: 28px;
-  background: rgba(139, 92, 246, 0.1);
-  border-radius: 14px;
+  height: 32px;
+  background: rgba(200, 179, 246, 0.15);
+  border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .skill-bar {
   position: relative;
   height: 100%;
-  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
-  border-radius: 14px;
+  background: linear-gradient(90deg, rgba(108, 99, 255, 0.8), rgba(139, 92, 246, 0.9));
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 12px;
+  padding-right: 14px;
   width: var(--skill-percentage);
   animation: fillBar 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3),
-    inset 0 0 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.4),
+    inset 0 0 15px rgba(255, 255, 255, 0.15);
   transition: all 0.3s ease;
 }
 
 .skill-bar:hover {
-  box-shadow: 0 0 30px rgba(139, 92, 246, 0.5),
-    inset 0 0 15px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 35px rgba(139, 92, 246, 0.6),
+    0 0 50px rgba(108, 99, 255, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
 .skill-bar-fill {
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
-  border-radius: 14px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.08));
+  border-radius: 16px;
 }
 
 body.light-mode .skill-page {
-  background: linear-gradient(135deg, #f8f6ff 0%, #ede9ff 50%, #f5f2ff 100%);
+  background: radial-gradient(circle at center, rgba(139, 92, 246, 0.08), rgba(167, 139, 250, 0.04)),
+    linear-gradient(135deg, rgba(200, 179, 246, 0.05), rgba(139, 92, 246, 0.02));
 }
 
 body.light-mode .skill-title {
   color: #2a1a5e;
+  text-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
 }
 
 body.light-mode .skill-subtitle {
-  color: rgba(42, 26, 94, 0.7);
+  color: rgba(42, 26, 94, 0.75);
 }
 
 body.light-mode .skill-name {
   color: #2a1a5e;
 }
 
+body.light-mode .skill-value {
+  color: #8b5cf6;
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.25);
+}
+
 body.light-mode .skills-list {
-  background: rgba(255, 255, 255, 0.7);
-  border-color: rgba(139, 92, 246, 0.15);
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(139, 92, 246, 0.2);
   box-shadow: 0 10px 40px rgba(139, 92, 246, 0.1);
+}
+
+body.light-mode .skill-bar-container {
+  background: rgba(200, 179, 246, 0.1);
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+body.light-mode .skill-bar {
+  background: linear-gradient(90deg, rgba(139, 92, 246, 0.7), rgba(167, 139, 250, 0.8));
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.25);
 }
 
 @media (max-width: 768px) {
   .skill-page {
-    padding: 60px 0;
+    padding: 50px 0 80px;
   }
 
   .skill-container {
@@ -1033,24 +1249,14 @@ body.light-mode .skills-list {
     gap: 24px;
   }
 
-  .skill-item {
-    padding: 8px 0;
-  }
-
   .skill-bar-container {
-    height: 24px;
-  }
-
-  .skill-bar {
-    padding-right: 10px;
+    height: 28px;
   }
 
   .chart-grid {
     display: none;
   }
-}
 
-@media (max-width: 768px) {
   .experience-grid {
     grid-template-columns: 1fr;
     gap: 30px;
