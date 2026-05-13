@@ -165,21 +165,27 @@
     </section>
   </div>
 
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('dangthi-theme');
-
-    if (currentTheme === 'light') {
-      document.body.classList.add('light-mode');
-      themeToggle.textContent = '☀';
-    }
-
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-      const isLight = document.body.classList.contains('light-mode');
-      themeToggle.textContent = isLight ? '☀' : '☾';
-      localStorage.setItem('dangthi-theme', isLight ? 'light' : 'dark');
-    });
-  </script>
+  <section class="experience-page" id="experience">
+    <div class="experience-container">
+      <h2 class="experience-title">Experience</h2>
+      <div class="experience-grid">
+        <div class="experience-item">
+          <h3>Học tập các công cụ design</h3>
+          <p class="experience-date">2020-2023</p>
+          <p class="experience-desc">Trang bị kỹ năng sử dụng Photoshop, Figma, Canva và các công cụ thiết kế khác</p>
+        </div>
+        <div class="experience-item">
+          <h3>Thiết kế trang web truyện tranh</h3>
+          <p class="experience-date">2023-2025</p>
+          <p class="experience-desc">Thực hiện nhiều dự án website truyện tranh với giao diện dễ tương tác và hấp dẫn</p>
+        </div>
+        <div class="experience-item">
+          <h3>Thiết kế trang phục cosplay</h3>
+          <p class="experience-date">2025-nay</p>
+          <p class="experience-desc">Tham gia thiết kế trang phục, phụ kiện Cosplay</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
