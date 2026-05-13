@@ -2,137 +2,108 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dang Hoang Anh Thi Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dang Thi Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+  <div class="page-shell">
+    <div class="background-layer"></div>
+    <div class="background-layer layer-2"></div>
+    <div class="background-layer layer-3"></div>
 
-  <div class="background-blur"></div>
-
-  <header>
-    <h2 class="logo">AT.</h2>
-
-    <button id="theme-toggle">
-      ☾
-    </button>
-  </header>
-
-  <main>
-
-    <section class="hero">
-
-      <div class="hero-left">
-
-        <p class="small-title">PORTFOLIO</p>
-
-        <h1>
-          Đặng Hoàng <br>
-          Anh Thi
-        </h1>
-
-        <h3>Đồ họa kỹ thuật số</h3>
-
-        <p class="description">
-          Mình yêu thích thiết kế sáng tạo, minh họa kỹ thuật số 
-          và những trải nghiệm giao diện mang cảm giác mềm mại,
-          hiện đại và nghệ thuật.
-        </p>
-
-        <div class="buttons">
-          <button class="primary-btn">Xem dự án</button>
-          <button class="secondary-btn">Liên hệ</button>
-        </div>
-
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-icon">♦</span>
+        <span class="brand-text">Dang Thi</span>
       </div>
 
-      <div class="hero-right">
+      <nav class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skill">Skill</a>
+        <a href="#experience">Experience</a>
+      </nav>
 
-        <div class="profile-card">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop" alt="">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Chuyển chủ đề">☾</button>
+    </header>
+
+    <main class="hero" id="home">
+      <div class="hero-visual">
+        <div class="glass-card avatar-card">
+          <div class="avatar-glow"></div>
+          <div class="avatar-stars">
+            <span class="star">★</span>
+            <span class="star">☆</span>
+            <span class="star">★</span>
+            <span class="star">☆</span>
+            <span class="star">★</span>
+            <span class="star">☆</span>
+          </div>
+          <div class="avatar-frame">
+            <img src="Chibi.jpg" alt="Avatar Dang Thi" />
+          </div>
+          <div class="avatar-badge">Kawaii Cyber</div>
         </div>
-
       </div>
 
+      <div class="hero-copy">
+        <p class="eyebrow">PORTFOLIO</p>
+
+        <div class="hero-title-wrap">
+          <span class="hero-title shadow-title">PORTFOLIO</span>
+          <span class="hero-title shadow-title secondary">PORTFOLIO</span>
+          <span class="hero-title">PORTFOLIO</span>
+        </div>
+
+        <p class="hero-subtitle">Anime aesthetic, kawaii cyber, glassmorphism landing page với nét mềm mại và chiều sâu hiện đại.</p>
+
+        <div class="contact-panel">
+          <div class="contact-item">
+            <span>FA</span>
+            <strong>/annhthi</strong>
+          </div>
+          <div class="contact-item">
+            <span>IG</span>
+            <strong>@dang.thi</strong>
+          </div>
+          <div class="contact-item">
+            <span>ZL</span>
+            <strong>/anh.thi</strong>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="details-section" id="about">
+      <div class="info-card">
+        <h2>Chào mừng bạn</h2>
+        <p>Thiết kế portfolio phong cách anime aesthetic, tối giản nhưng vẫn giàu chiều sâu. Giao diện phù hợp landing page chuyên nghiệp với hiệu ứng soft glow và glassmorphism nhẹ.</p>
+      </div>
     </section>
-
-    <section class="about">
-
-      <div class="card">
-        <h2>Giới thiệu</h2>
-
-        <p>
-          Xin chào! Mình là Anh Thi — sinh viên ngành 
-          Đồ họa kỹ thuật số với niềm yêu thích đặc biệt dành cho 
-          UI/UX, illustration và thiết kế mang màu sắc nghệ thuật.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2>Sở thích</h2>
-
-        <ul>
-          <li>🎨 Vẽ tranh</li>
-          <li>🎧 Nghe nhạc</li>
-          <li>🧁 Làm bánh</li>
-        </ul>
-      </div>
-
-    </section>
-
-    <section class="projects">
-
-      <h2 class="section-title">Dự án nổi bật</h2>
-
-      <div class="project-grid">
-
-        <div class="project-card">
-          <h3>UI Mobile App</h3>
-          <p>
-            Thiết kế ứng dụng học tập với phong cách pastel tối giản.
-          </p>
-        </div>
-
-        <div class="project-card">
-          <h3>Branding Design</h3>
-          <p>
-            Bộ nhận diện thương hiệu với cảm hứng nghệ thuật số.
-          </p>
-        </div>
-
-        <div class="project-card">
-          <h3>Digital Illustration</h3>
-          <p>
-            Bộ tranh minh họa mang phong cách dreamy fantasy.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
+  </div>
 
   <script>
-    const toggleBtn = document.getElementById("theme-toggle");
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('dangthi-theme');
 
-    toggleBtn.addEventListener("click", () => {
-      document.body.classList.toggle("light-mode");
+    if (currentTheme === 'light') {
+      document.body.classList.add('light-mode');
+      themeToggle.textContent = '☀';
+    }
 
-      if(document.body.classList.contains("light-mode")){
-        toggleBtn.innerHTML = "☀";
-      }else{
-        toggleBtn.innerHTML = "☾";
-      }
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      const isLight = document.body.classList.contains('light-mode');
+      themeToggle.textContent = isLight ? '☀' : '☾';
+      localStorage.setItem('dangthi-theme', isLight ? 'light' : 'dark');
     });
   </script>
-
 </body>
 </html>
