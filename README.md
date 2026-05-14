@@ -537,3 +537,20 @@ Footer:
 
 * Khi nhấn vào Project, sẽ có một modal popup sẽ hiển thị hình ảnh mô tả dự án
 * Modal có nút dong và hỗ trợ nhấn ngoài vùng modal/ phím EsCape để tắt.
+
+## Ý tưởng thiết kế tổng thể
+- Ý tưởng thiết kế tổng thể của portfolio được lấy cảm hứng từ phong cách anime aesthetic kết hợp cùng xu hướng UI/UX hiện đại. Nhóm lựa chọn tông màu tím pastel làm màu chủ đạo nhằm tạo cảm giác nhẹ nhàng, sáng tạo và mang tính cá nhân hóa cao. Màu tím đồng thời thể hiện sự mơ mộng, nghệ thuật và phù hợp với định hướng thiết kế đồ họa kỹ thuật số.
+
+- Bố cục giao diện được xây dựng theo phong cách tối giản (minimalism) nhằm giúp người xem tập trung vào nội dung chính nhưng vẫn tạo được điểm nhấn thị giác thông qua typography lớn, hiệu ứng glow mềm và các chi tiết trang trí như icon ngôi sao, outline text hay glassmorphism.
+
+- Phần hình ảnh nhân vật anime chibi được sử dụng như một yếu tố đại diện cho cá tính và sở thích cá nhân của tác giả. Nhân vật mang phong cách dễ thương, hiện đại và có màu sắc đồng bộ với toàn bộ giao diện nhằm tạo sự liên kết tổng thể.
+
+- Trong thiết kế, nhóm sử dụng hiệu ứng chuyển màu gradient, ánh sáng mềm và shadow để tạo chiều sâu cho giao diện. Ngoài ra, các thành phần như navbar, card thông tin và typography được sắp xếp cân đối nhằm mang lại trải nghiệm trực quan, hiện đại và dễ theo dõi cho người dùng.
+
+- Tổng thể sản phẩm hướng đến phong cách portfolio cá nhân dành cho sinh viên ngành đồ họa kỹ thuật số, thể hiện sự sáng tạo, cá tính nghệ thuật và khả năng thiết kế giao diện web hiện đại.
+
+* Mã màu trong ý tưởng:
+- #0D0E20
+- #2D1C7F
+- #C8B3F6
+- #B0A9E5 
