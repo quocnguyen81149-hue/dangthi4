@@ -12,6 +12,7 @@
 - Sau đó mình đưa mẫu bên canva vào chat gpt để tạo prompt mẫu:
 
 - Đầu tiên tạo prompt mẫu phần Home:
+
 Home
 
 * Tạo giao diện portfolio anime aesthetic phong cách UI/UX hiện đại với tông tím pastel và tím đậm.
@@ -112,6 +113,7 @@ Yêu cầu:
 * tỉ lệ 16:9
 
 - prompt tạo phần about bên chat GPT:
+
 About
 
 Tạo giao diện trang “About Me” cho portfolio phong cách anime aesthetic hiện đại với tông tím pastel và trắng.
@@ -248,7 +250,9 @@ Yêu cầu:
 * tỉ lệ 16:9
 
 - prompt Experience bên chat gpt:
+
 Experience
+
 * Thiết kế section “Experience” cho portfolio website theo phong cách hiện đại màu tím gradient giống cyber/glassmorphism.
 
 Background:
@@ -374,7 +378,9 @@ Box phải:
 * Hiệu ứng hover nhẹ cho các box timeline.
 
 * Thiết kế giống portfolio cá nhân sáng tạo, aesthetic và futuristic.
+
 - Prompt skills đưa qua chat GPT
+
 Skill
 
 * Thiết kế section “Skill” cho portfolio cá nhân theo phong cách modern pastel tím, giao diện tối giản và mềm mại.
