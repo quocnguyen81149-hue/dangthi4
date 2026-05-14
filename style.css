@@ -1249,6 +1249,105 @@ body.light-mode .copyright {
   color: rgba(42, 26, 94, 0.6);
 }
 
+.project-card--popup {
+  cursor: pointer;
+}
+
+.project-card--popup:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 4px;
+}
+
+.project-note {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.92rem;
+}
+
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 11, 28, 0.84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 1200;
+}
+
+.project-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-modal {
+  width: min(100%, 980px);
+  max-height: min(90vh, 720px);
+  overflow: auto;
+  background: rgba(15, 16, 38, 0.98);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.35);
+  padding: 30px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.modal-close:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.modal-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.modal-gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 900px) {
+  .modal-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .modal-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .skill-page {
   padding: 60px 0 100px;
   background: radial-gradient(circle at center, rgba(108, 99, 255, 0.15), rgba(139, 92, 246, 0.1), rgba(167, 139, 250, 0.08)),

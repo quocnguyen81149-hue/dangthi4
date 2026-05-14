@@ -263,13 +263,14 @@
   <section class="projects-page" id="projects">
     <div class="projects-container">
       <div class="projects-grid">
-        <div class="project-card">
+        <div class="project-card project-card--popup" role="button" tabindex="0" data-title="Thiết kế website mỹ phẩm" data-images="z7618813210612_2825d2208132fefbde661f60f1f21d00.jpg,z7618813232146_9da77c02170f0954bae81f64e6aa3004.jpg,z7619567305112_738f799a11fe115adac23573b0af69e5.jpg">
           <div class="project-image">
             <img src="tải xuống (4).jpg" alt="Website Bán Mỹ Phẩm" />
           </div>
           <div class="project-content">
             <h3 class="project-title">Website Bán Mỹ Phẩm</h3>
             <p class="project-description">Thiết kế landing page cho thương hiệu sản phẩm theo phong cách tối giản</p>
+            <p class="project-note">Nhấn để xem thêm hình thiết kế</p>
             <div class="project-tags">
               <span class="tag">Figma</span>
               <span class="tag">Canva</span>
@@ -315,13 +316,25 @@
       </footer>
     </div>
   </section>
+
+  <section class="project-modal-overlay" id="project-modal" aria-hidden="true">
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Đóng">×</button>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <div class="modal-gallery" id="modal-gallery"></div>
+    </div>
+  </section>
 </body>
 
 <script>
   // Theme toggle functionality
   const themeToggle = document.getElementById('theme-toggle');
-  const htmlElement = document.documentElement;
   const body = document.body;
+  const projectModal = document.getElementById('project-modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalGallery = document.getElementById('modal-gallery');
+  const modalClose = document.getElementById('modal-close');
+  const projectCards = document.querySelectorAll('.project-card[data-images]');
 
   // Check for saved theme preference or default to dark mode
   const savedTheme = localStorage.getItem('theme') || 'dark';
@@ -339,6 +352,46 @@
     const isLightMode = body.classList.contains('light-mode');
     localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
     themeToggle.textContent = isLightMode ? '☀️' : '☾';
+  });
+
+  function openProjectModal(card) {
+    const title = card.dataset.title || 'Dự án';
+    const images = card.dataset.images.split(',').map((src) => src.trim()).filter(Boolean);
+    modalTitle.textContent = title;
+    modalGallery.innerHTML = images
+      .map((src) => `<img src="${src}" alt="${title}" />`)
+      .join('');
+    projectModal.classList.add('active');
+    projectModal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeProjectModal() {
+    projectModal.classList.remove('active');
+    projectModal.setAttribute('aria-hidden', 'true');
+    modalGallery.innerHTML = '';
+  }
+
+  projectCards.forEach((card) => {
+    card.addEventListener('click', () => openProjectModal(card));
+    card.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openProjectModal(card);
+      }
+    });
+  });
+
+  modalClose.addEventListener('click', closeProjectModal);
+  projectModal.addEventListener('click', (event) => {
+    if (event.target === projectModal) {
+      closeProjectModal();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && projectModal.classList.contains('active')) {
+      closeProjectModal();
+    }
   });
 </script>
 
